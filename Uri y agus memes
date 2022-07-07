@@ -1,0 +1,85 @@
+<style>
+    .profe {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    .div1 {
+        border-color: black;
+        border: 1px;
+    }
+</style>
+<script>
+    function recibe (){
+     let nombre = document.forms["F"]["nombre"].value;
+     let apellido = document.forms["F"]["apellido"].value;
+     let respuesta = "";
+
+     if( nombre == "") respuesta = "Falta el nombre"; 
+         else if ( apellido == "") respuesta = "Falta el apellido"; 
+     else respuesta = "Bienvenido " + nombre +" "+apellido;    
+     
+     document.getElementById("p1").innerHTML = respuesta;
+    }
+
+    function suma(){
+       
+let suma, numero1, numero2;
+numero1= document.forms["juancito"]["cif1"].value;
+numero2= document.forms["juancito"]["cif2"].value;
+suma=  parseInt( numero1)  +  parseInt(numero2)  ;
+
+document.getElementById("resultado").innerHTML=  suma;
+}
+
+</script>
+</head>
+<body >
+
+ <center>
+<p class="profe">La pagina del uri y el agus</p>
+<p class="profe"> Memes</p>
+</center>
+
+<form name="F">
+Nombre <input name="nombre" id="nombre" size="20" maxlength="15"><br/><br/>
+Apellido <input name="apellido" id="apellido" size="20"><br/><br/>
+<input type="button" value="ENVIAR" onClick="recibe()">
+</form>
+
+<p id="p1">
+
+</p>
+<form name="juancito">
+    <input name = "cif1">
+    <input type = "button" value = "+" onClick="suma()">
+    <input name ="cif2">
+</form>
+=
+<div id="resultado"></div>
+    
+
+<center>
+ <p>
+    <iframe width="1017" height="763" src="https://www.youtube.com/embed/s6zrzOgh4CI" title="perro chacarron" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </iframe>
+
+    </iframe>
+
+</p>
+ 
+<a href="https://www.hillspet.es/dog-care/dog-breeds/english-bulldog">
+ <img src= "Perrowaton.jpg" width="30%">
+ <img src= "a68362f54a0d8be932af5a51a2429993b22a998er1-760-738v2_hq.jpg" width="30%">
+ <img src= "tumblr_ozyjso6C5T1vrc21zo1_500.jpg" width="30%">
+</a>
+ 
+ 
+</center>
+
+<a href="https://cantone.com.ar"> La web del profe     </a>
+
+
+
+</body>
